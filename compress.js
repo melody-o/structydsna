@@ -29,6 +29,6 @@ const compress = (s) => {
   return str.join('')
 };
 
-compress('ccaaatsss'); // -> '2c3at3s'
-compress('ssssbbz'); // -> '4s2bz'
-compress('ppoppppp'); // -> '2po5p'
+console.log(compress('ccaaatsss')); // -> '2c3at3s'
+console.log(compress('ssssbbz')); // -> '4s2bz'
+console.log(compress('ppoppppp')); // -> '2po5p'
