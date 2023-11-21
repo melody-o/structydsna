@@ -29,18 +29,18 @@ const pairProduct = (numbers, targetProduct) => {
   };
 
 //ideal way
-  const pairProduct = (numbers, targetProduct) => {
-    // todo
-    let indxObj = {}
+  // const pairProduct = (numbers, targetProduct) => {
+  //   // todo
+  //   let indxObj = {}
 
 
-    for (let i = 0; i < numbers.length; i++){
-      console.log(i)
-      let val = numbers[i]
-      let prod = targetProduct / val
-      if (prod in indxObj){
-        return [i, indxObj[prod]]
-      }
-      indxObj[val] = i
-    }
-  };
+  //   for (let i = 0; i < numbers.length; i++){
+  //     console.log(i)
+  //     let val = numbers[i]
+  //     let prod = targetProduct / val
+  //     if (prod in indxObj){
+  //       return [i, indxObj[prod]]
+  //     }
+  //     indxObj[val] = i
+  //   }
+  // };

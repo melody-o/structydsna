@@ -46,8 +46,56 @@ function getNeighbors(node, matrix) {
     return neighbors;
 }
 
+// const matrix = [
+//     [0, 1, 0, 0, 1],
+//     [1, 0, 0, 0, 1],
+//     [1, 1, 0, 1, 1],
+//     [0, 1, 1, 0, 0],
+//     [0, 0, 0, 0, 0],
+//   ];
+
+
+
+    //without holding in variables
+//   function getNeighbors(node, matrix) {
+    // Create an array to hold the valid neighbors
+    // let neighbors = [];
+
+    // UP:
+    // Identify the node above the current node, if it exists
+    // Push that node into the new array
+    // if (node[0] - 1 >= 0) {
+    //   neighbors.push([node[0] - 1, node[1], 'up']);
+    // }
+
+    // DOWN:
+    // Identify the node below the current node, if it exists
+    // Push that node into the new array
+    // if (node[0] + 1 < matrix.length) {
+    //   neighbors.push([node[0] + 1, node[1], 'down']);
+    // }
+
+    // LEFT:
+    // Identify the node to the left of the current node, if it exists
+    // Push that node into the new array
+    // if (node[1] - 1 >= 0) {
+    //   neighbors.push([node[0], node[1] - 1, 'left']);
+    // }
+
+    // RIGHT:
+    // Identify the node to the right of the current node, if it exists
+    // Push that node into the new array
+    // if (node[1] + 1 < matrix[0].length) {
+    //   neighbors.push([node[0], node[1] + 1, 'right']);
+    // }
+
+    // Return the neighbors array
+//     return neighbors;
+//   }
+
+
 // returns the correct neighbors from an internal node
-getNeighbors([2,2], matrix) // returns [ [1,2], [3,2], [1,2], [3,2] ]
+getNeighbors([2,2], matrix) // returns [ [1,2], [3,2], [2,1], [2,3] ]
 
 // returns the correct neighbors from a corner node
 getNeighbors([0,0], matrix) // returns [ [1,0], [0,1] ]
