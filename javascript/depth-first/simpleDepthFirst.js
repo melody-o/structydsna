@@ -22,6 +22,12 @@ const adjList = {
       let currentNode = stack.pop();
       console.log(currentNode)
 
+//       for (item of adjList[currentNode]){
+//         if(!visited.has(item)){
+//           visited.add(item)
+//             stack.push(item)
+//       }
+//   }
       adjList[currentNode].forEach(item => {
         if (!visited.has(item)) {
           stack.push(item)
